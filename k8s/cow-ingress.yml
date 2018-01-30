@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/ssl-passthrough: false
+    kubernetes.io/ingress.class: nginx-internal
+  generation: 1
+  labels:
+    app: cowsay
+  name: cow-ingress
+spec:
+  tls:
+  - hosts:
+    - dtk8s-int.gpscancer.io
+    secretName: dtk8s-int-secret
+  rules:
+  - host: dtk8s-int.gpscancer.io
+    http:
+      paths:
+      - backend:
+          serviceName: cow-svc
+          servicePort: 8080
+        path: /
+      - backend:
+          serviceName: cow-svc
+          servicePort: 8080
+        path: /cow

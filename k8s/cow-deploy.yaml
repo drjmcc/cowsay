@@ -1,0 +1,32 @@
+apiVersion: apps/v1beta1  
+kind: Deployment
+metadata:
+  name: cow-deploy
+spec:
+  selector:
+    matchLabels:
+      app: cowsay
+  replicas: 2 
+  template: 
+    metadata:
+      labels:
+        app: cowsay
+    spec:
+      containers:
+      - name: cowsay
+        image: davidmcc/cowsay
+        #sheax0r/docker-cowsay
+        ports:
+        - containerPort: 80
+        # readinessProbe:
+        #   httpGet:
+        #     path: /somecow
+        #     port: 80
+        #     scheme: HTTP
+        #   initialDelaySeconds: 10
+        # livenessProbe:
+        #   httpGet:
+        #     path: /somecow
+        #     port: 80
+        #     scheme: HTTP
+        #   initialDelaySeconds: 30

@@ -1,0 +1,129 @@
+#ignore thumbnails created by windows
+Thumbs.db
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Bb]in
+[Bb]in/
+[Oo]bj
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebug*/
+[Rr]elease/
+*.bak
+.idea/
+x64/
+*_i.c
+*_p.c
+*.idea
+*.ilk
+*.lib
+*.log
+*.log.*
+*.meta
+*.obj
+*.pch
+*.exe
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.vspscc
+*.vssscc
+.builds
+Development/Code/IvyArtifacts
+Development/Code/Lib
+*.[Cc]ache
+ClientBin
+[Ss]tyle[Cc]op.*
+~$*
+*.dbmdl
+
+# mstest test results
+TestResults
+[Tt]est[Rr]esult*
+
+# Backup & report files from converting an old project file to a newer
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# ReSharper is a .NET coding add-in
+_ReSharper*
+*.[Rr]esharper
+
+# Click-Once directory
+publish
+
+# Publish Web Output
+*.Publish.xml
+
+# NuGet Packages Directory
+packages
+
+# Windows Azure Build Output
+csx
+*.build.csdef
+
+# Ivy folders
+IvyArtifacts/
+Lib/
+
+#Merge Files
+*.orig
+
+#Robot Global Library
+tests/Functional/Robot/Python/RobotGlobalLibrary/
+tests/Functional/Robot/RobotGlobalLibrary/
+RobotGlobalLibrary-config.txt
+
+# XML doc
+NaviNet.ClinicalDataService.Service.XML
+
+# Dist
+dist/
+
+# Add Nuget.exe
+!.nuget/nuget.exe
+
+.nuget/NuGet.targets
+
+#Test report files
+report.html
+output.xml
+log.html
+
+*.pyc
+=======
+src/ClinicalGateway/Conf/Properties.Windsor.xml.orig
+tests/Functional/Robot/Libraries/Base64Encoder.pyc
+tests/Functional/Robot/Libraries/CouchbaseLibrary.pyc
+tests/Functional/Robot/Libraries/JSONMessageBuilder.pyc
+tests/Functional/Robot/Libraries/StompMessagingClient.pyc
+# Robot Global Files 
+RobotGlobalLibrary/ 
+RobotGlobalLibrary-config.txt 
+.vs/
+
+/src/ClinicalGateway.Core/NaviNet.ClinicalGateway.Core.csproj.DotSettings
