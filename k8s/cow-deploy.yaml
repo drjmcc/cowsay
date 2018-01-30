@@ -15,7 +15,6 @@ spec:
       containers:
       - name: cowsay
         image: davidmcc/cowsay
-        #sheax0r/docker-cowsay
         ports:
         - containerPort: 80
         # readinessProbe:

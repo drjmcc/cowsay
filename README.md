@@ -37,7 +37,7 @@ dotnet publish -c release -o out
 You can run the application on **Linux or macOS** using the following command.
 
 ```console
-dotnet out/cowsay.dll
+dotnet out/Cowsay.dll
 ```
 
 ## Docker Images used in this sample
