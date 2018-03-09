@@ -12,7 +12,7 @@ namespace cowsay.Controllers
         public string Cow(string message)
         {
             if (String.IsNullOrEmpty(message))
-                message = "Hi. My name is Dr Cow Pat.";
+                message = "Hi. My name is Mr Cow";
 
             return Cowsay.GetCowsay(message, AnimalMode.Wired);
         }
